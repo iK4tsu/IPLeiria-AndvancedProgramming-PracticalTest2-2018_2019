@@ -1,0 +1,23 @@
+package "Example of .ggo file"
+version "1.0"
+purpose "Simple example (optional)"
+description "description needed (optional)"
+versiontext "versiontext needed (optional)"
+
+#----------------------------
+# independent options
+#----------------------------
+# Mandatory option
+#option "folder" f "folder" string typestr="dirname" required
+
+option	"ip"		i	"ip address"	string	optional	default="127.0.0.1"
+option	"port"		p	"port"			int		required
+option	"message"	m	"message"		string	required
+option	"key"		k	"key"			int		optional
+
+# Optional
+#option "num" n "number" int optional
+
+#
+# NOTE: support for this file needs to be enabled in 'makefile'
+#
